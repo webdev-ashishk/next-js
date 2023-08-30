@@ -1,10 +1,20 @@
-import React from "react";
+import Link from "next/link";
+import { useRouter } from "next/navigation";
 
-const pageNotFound = () => {
+const PageNotFound = () => {
+  const router = useRouter();
+  useEffect(() => {
+    setTimeout(() => {
+      router.push("/");
+    }, 3000);
+  }, []);
   return (
-    <div>
+    <center className="notFound">
       <h2>page not found!</h2>
-    </div>
+      <Link href="/" className="backtohome">
+        Back to Home
+      </Link>
+    </center>
   );
 };
-export default pageNotFound;
+export default PageNotFound;

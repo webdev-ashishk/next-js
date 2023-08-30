@@ -123,3 +123,9 @@ nav > ul > li:hover {
   background-color: white;
   color: black;
 }
+.notFound {
+  padding-top: 100px;
+}
+.backtohome {
+  border: 2px solid red;
+}
