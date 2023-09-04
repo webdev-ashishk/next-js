@@ -4,7 +4,7 @@ import React from "react";
 const Header = () => {
   return (
     <>
-      <nav>
+      <nav className="bg-blue-900">
         <ul>
           <li>
             <Link href="/">Home</Link>
